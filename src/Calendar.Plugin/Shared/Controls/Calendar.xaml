@@ -80,8 +80,9 @@
                 x:Name="eventsScrollView"
                 Grid.Row="1"
                 HorizontalOptions="FillAndExpand"
-                VerticalOptions="StartAndExpand">
+                VerticalOptions="EndAndExpand">
                 <controls:GenericRepeaterView
+                    x:Name="innerScrollViewRepeater"
                     HorizontalOptions="FillAndExpand"
                     ItemTemplate="{Binding EventTemplate, Source={x:Reference calendar}}"
                     ItemsSource="{Binding SelectedDayEvents, Source={x:Reference calendar}}"

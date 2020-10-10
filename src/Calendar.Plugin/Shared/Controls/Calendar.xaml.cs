@@ -810,6 +810,11 @@ namespace Xamarin.Plugin.Calendar.Controls
             calendarContainer.Opacity = currentValue * currentValue * currentValue;
         }
 
+        public void ScrollDayDetailToEnd()
+        {
+            eventsScrollView.ScrollToAsync(innerScrollViewRepeater, ScrollToPosition.End, false);
+        }
+
         #endregion
     }
 }
